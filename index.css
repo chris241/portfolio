@@ -785,7 +785,7 @@ to {
 }
 to {
     width: 75%}
-}#Skill-XML {
+}#Skill-Mongo {
     animation: Animate-XML 4s;
     -webkit-animation: Animate-XML 4s;
     -moz-animation: Animate-XML 4s;
@@ -793,7 +793,7 @@ to {
     width: 70%;
     height: 50px;
     position: absolute;
-    background-color: #5aa669;
+    background-color: #4DB33D;
 }
 @keyframes Animate-XML {
     from {
@@ -929,7 +929,7 @@ to {
     width: 80%;
     height: 50px;
     position: absolute;
-    background-color: #23b1db;
+    background-color: #F29111;
 }
 @keyframes Animate-SQL {
     from {
