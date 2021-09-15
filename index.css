@@ -887,6 +887,43 @@ to {
 }
 to {
     width: 85%}
+}
+    #Skill-Node {
+        animation: Animate-JAVA 4s;
+        -webkit-animation: Animate-JAVA 4s;
+        -moz-animation: Animate-JAVA 4s;
+        -o-animation: Animate-JAVA 4s;
+        width: 65%;
+        height: 50px;
+        position: absolute;
+        background-color: #3c873a;
+    }
+    @keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 65%}
+    }@-webkit-keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 65%}
+    }@-moz-keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 65%}
+    }@-o-keyframes Animate-JAVA {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 65%}
+    
+      
 }#Skill-Typescript {
     animation: Animate-PHP 4s;
     -webkit-animation: Animate-PHP 4s;
