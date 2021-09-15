@@ -657,7 +657,7 @@ body:not(.user-is-tabbing) a:focus {
     -o-animation: Animate-HTML 4s;
     height: 50px;
     position: absolute;
-    background-color: #ea8564;
+    background-color: #F06529;
 }
 @keyframes Animate-HTML {
     from {
@@ -691,7 +691,7 @@ to {
     width: 70%;
     height: 50px;
     position: absolute;
-    background-color: #55a69f;
+    background-color: #2965f1;
 }
 @keyframes Animate-CSS {
     from {
@@ -722,7 +722,7 @@ to {
     -webkit-animation: Animate-jQuery 5s;
     -moz-animation: Animate-jQuery 5s;
     -o-animation: Animate-jQuery 5s;
-    width: 40%;
+    width: 60%;
     height: 50px;
     position: absolute;
     background-color: #99856d;
@@ -732,13 +732,13 @@ to {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 60%}
 }@-webkit-keyframes Animate-jQuery {
     from {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 60%}
 }@-moz-keyframes Animate-jQuery {
     from {
     width: 10px;
@@ -750,7 +750,7 @@ to {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 60%}
 }#Skill-JS {
     animation: Animate-JS 4s;
     -webkit-animation: Animate-JS 4s;
@@ -824,23 +824,23 @@ to {
     -webkit-animation: Animate-C 4s;
     -moz-animation: Animate-C 4s;
     -o-animation: Animate-C 4s;
-    width: 30%;
+    width: 50%;
     height: 50px;
     position: absolute;
-    background-color: #970cc1;
+    background-color: #d64292;
 }
 @keyframes Animate-C {
     from {
     width: 10px;
 }
 to {
-    width: 30%}
+    width: 50%}
 }@-webkit-keyframes Animate-C {
     from {
     width: 10px;
 }
 to {
-    width: 30%}
+    width: 50%}
 }@-moz-keyframes Animate-C {
     from {
     width: 10px;
@@ -849,78 +849,78 @@ to {
     width: 30%}
 }@-o-keyframes Animate-C {
     from {
-    width: 10px;
+    width: 50;
 }
 to {
-    width: 30%}
+    width: 50%}
 }#Skill-JAVA {
     animation: Animate-JAVA 4s;
     -webkit-animation: Animate-JAVA 4s;
     -moz-animation: Animate-JAVA 4s;
     -o-animation: Animate-JAVA 4s;
-    width: 25%;
+    width: 85%;
     height: 50px;
     position: absolute;
-    background-color: #8e930c;
+    background-color: #512bd4;
 }
 @keyframes Animate-JAVA {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
+    width: 85%}
 }@-webkit-keyframes Animate-JAVA {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
+    width: 85%}
 }@-moz-keyframes Animate-JAVA {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
+    width: 85%}
 }@-o-keyframes Animate-JAVA {
     from {
     width: 10px;
 }
 to {
-    width: 25%}
-}#Skill-PHP {
+    width: 85%}
+}#Skill-Typescript {
     animation: Animate-PHP 4s;
     -webkit-animation: Animate-PHP 4s;
     -moz-animation: Animate-PHP 4s;
     -o-animation: Animate-PHP 4s;
-    width: 50%;
+    width: 65%;
     height: 50px;
     position: absolute;
-    background-color: #5A69A6;
+    background-color: #007acc;
 }
 @keyframes Animate-PHP {
     from {
     width: 10px;
 }
 to {
-    width: 50%}
+    width: 65%}
 }@-webkit-keyframes Animate-PHP {
     from {
     width: 10px;
 }
 to {
-    width: 50%}
+    width: 65%}
 }@-moz-keyframes Animate-PHP {
     from {
     width: 10px;
 }
 to {
-    width: 50%}
+    width: 65%}
 }@-o-keyframes Animate-PHP {
     from {
     width: 10px;
 }
 to {
-    width: 50%}
+    width: 65%}
 }#Skill-SQL {
     animation: Animate-SQL 4s;
     -webkit-animation: Animate-SQL 4s;
@@ -955,40 +955,40 @@ to {
 }
 to {
     width: 80%}
-}#Skill-VBNET {
+}#Skill-Angular {
     animation: Animate-VBNET 4s;
     -webkit-animation: Animate-VBNET 4s;
     -moz-animation: Animate-VBNET 4s;
     -o-animation: Animate-VBNET 4s;
-    width: 35%;
+    width: 55%;
     height: 50px;
     position: absolute;
-    background-color: #f8a51e;
+    background-color: #dd1b16;
 }
 @keyframes Animate-VBNET {
     from {
     width: 10px;
 }
 to {
-    width: 35%}
+    width: 55%}
 }@-webkit-keyframes Animate-VBNET {
     from {
     width: 10px;
 }
 to {
-    width: 35%}
+    width: 55%}
 }@-moz-keyframes Animate-VBNET {
     from {
     width: 10px;
 }
 to {
-    width: 35%}
+    width: 55%}
 }@-o-keyframes Animate-VBNET {
     from {
     width: 10px;
 }
 to {
-    width: 35%}
+    width: 55%}
 }.Skill-Area {
     z-index: 1;
     float: left;
