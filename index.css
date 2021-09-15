@@ -756,41 +756,41 @@ to {
     -webkit-animation: Animate-JS 4s;
     -moz-animation: Animate-JS 4s;
     -o-animation: Animate-JS 4s;
-    width: 65%;
+    width: 75%;
     height: 50px;
     position: absolute;
-    background-color: #c44e45;
+    background-color: #61dafb;
 }
 @keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 75%}
 }@-webkit-keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 75%}
 }@-moz-keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 75%}
 }@-o-keyframes Animate-JS {
     from {
     width: 10px;
 }
 to {
-    width: 65%}
+    width: 75%}
 }#Skill-XML {
     animation: Animate-XML 4s;
     -webkit-animation: Animate-XML 4s;
     -moz-animation: Animate-XML 4s;
     -o-animation: Animate-XML 4s;
-    width: 40%;
+    width: 70%;
     height: 50px;
     position: absolute;
     background-color: #5aa669;
@@ -800,13 +800,13 @@ to {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 70%}
 }@-webkit-keyframes Animate-XML {
     from {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 70%}
 }@-moz-keyframes Animate-XML {
     from {
     width: 10px;
@@ -818,7 +818,7 @@ to {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 70%}
 }#Skill-C {
     animation: Animate-C 4s;
     -webkit-animation: Animate-C 4s;
