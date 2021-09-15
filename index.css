@@ -1047,3 +1047,32 @@ to {
     color: #fff;
     font-size: 18px;
 }
+
+/*Test animation */
+
+.wrapper {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing {
+    width: 48ch;
+    animation: typing 5s steps(48), blink .6s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
