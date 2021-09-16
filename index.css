@@ -1075,3 +1075,7 @@ to {
       border-color: transparent
     }
   }
+  #map {
+    width: 960px;
+    height: 500px;
+    }
