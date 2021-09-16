@@ -324,10 +324,11 @@
 ></script>
 <script>
   var map = L.map('map',{
-  center: [43.64701, -79.39425],
-  zoom: 15
+  center: [-18.7669471, 46.869107],
+  zoom: 5
   });
-  var marker = L.marker([51.5, -0.09]).addTo(map);
+  var marker = L.marker([-19.070308, 47.553569]).addTo(map)
+  .bindPopup('Je suis ici');
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
