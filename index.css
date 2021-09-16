@@ -853,7 +853,7 @@ to {
 }
 to {
     width: 50%}
-}#Skill-JAVA {
+}#Skill-Asp {
     animation: Animate-JAVA 4s;
     -webkit-animation: Animate-JAVA 4s;
     -moz-animation: Animate-JAVA 4s;
@@ -887,8 +887,7 @@ to {
 }
 to {
     width: 85%}
-}
-    #Skill-Node {
+}#Skill-Node {
         animation: Animate-JAVA 4s;
         -webkit-animation: Animate-JAVA 4s;
         -moz-animation: Animate-JAVA 4s;
