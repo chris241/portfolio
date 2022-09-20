@@ -1076,6 +1076,7 @@ to {
     }
   }
   #map {
+    right: 70px;
     width: 720px;
     height: 350px;
     z-index: 1;
