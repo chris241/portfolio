@@ -1057,7 +1057,7 @@ to {
   }
   
   .typing {
-    width: 49ch;
+    width: 48ch;
     animation: typing 3s steps(48), blink .4s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
