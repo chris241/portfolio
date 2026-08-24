@@ -751,9 +751,10 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .exp-media--logo img {
-    max-width: 70%;
-    max-height: 60%;
     width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 11rem;
     object-fit: contain;
 }
 
