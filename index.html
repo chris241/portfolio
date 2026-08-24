@@ -5,246 +5,447 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Put your site title here -->
-  <title>
-    Stone
-  </title>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <title>Léon Chris Stone — Développeur Web Full-Stack</title>
+
+  <meta name="description"
+    content="Léon Chris Stone, développeur web full-stack basé à l'Île Maurice, spécialisé en React.js, ASP.NET Core, Angular et Node.js." />
+  <meta name="keywords"
+    content="Léon Chris Stone, développeur full stack, React, ASP.NET Core, Angular, Node.js, TypeScript, Ile Maurice, Madagascar, portfolio développeur" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-  <!-- ***** Header ***** -->
+  <!-- ***** Header / Nav ***** -->
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#experiences" class="nav__link">Expériences</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">A propos</a>
-          </li>
-          <li class="nav__item">
-            <a href="#competences" class="nav__link">Mes compétences</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+  <header class="site-header" id="top">
+    <div class="nav-wrap row">
+      <a href="#top" class="brand">
+        <span class="brand-mark">LC</span>
+        <span class="brand-name">Léon Chris Stone</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+        aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#experiences" class="nav-link">Expériences</a></li>
+          <li><a href="#about" class="nav-link">A propos</a></li>
+          <li><a href="#competences" class="nav-link">Mes compétences</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span class="animate-wiggle ">Léon Chris Stone</span>
-        </h1>
-        <div class="wrapper">
-           <span class="typing">Je suis un développeur Web Full stack, basé à l'Ile Maurice</span>
+  </header>
+
+  <!-- ***** Hero ***** -->
+
+  <section class="hero">
+    <div class="row hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow reveal">Développeur Web Full-Stack</p>
+        <h1 class="hero-title reveal">Léon Chris Stone</h1>
+        <div class="typing-wrap reveal">
+          <span class="typing" id="typingText">Basé à l'Île Maurice, je conçois des applications web sur mesure.</span>
+        </div>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
+          <a href="#experiences" class="btn btn-outline">Voir mon parcours</a>
+        </div>
       </div>
-        <a href="#contact" class="transition duration-300 btn btn--pink">Contactez-moi</a>
+
+      <div class="hero-media reveal">
+        <div class="hero-blob" aria-hidden="true"></div>
+        <img src="./images/ChrisAcensi.jpg" alt="Portrait de Léon Chris Stone" class="hero-photo" />
       </div>
     </div>
-  </header>
+
+    <a href="#experiences" class="scroll-cue" aria-label="Défiler vers le bas">
+      <span></span>
+    </a>
+  </section>
 
   <main role="main">
 
-    <!-- ***** experiences ***** -->
+    <!-- ***** Expériences ***** -->
 
-    <section class="work" id="experiences">
+    <section class="section" id="experiences">
       <div class="row">
-        <h2>Mes expériences</h2>
-        <div class="work__boxes">
+        <p class="eyebrow reveal">Parcours</p>
+        <h2 class="reveal">Mes expériences</h2>
 
-          <!-- Each div with the work__box class is a project. -->
+        <div class="timeline">
 
-          <div class="work__box">
-            <div class="work__text">
-              <h4>ACENSI MAURITIUS</h4>
-              <div>Juillet 2022 - Aujourd'hui</div>
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Février 2026 — Aujourd'hui</span>
+              <h3>Neoswift France</h3>
               <p>
-                Je suis en mission pour un client à l'île Maurice pour la création
-                d'une Web api en asp.net core 6.
+                Sur le projet L'Oréal, je conçois des vues et API SQL Server, mets en place
+                du cache Redis et participe à la migration des API vers .NET 10, en intégrant
+                l'IA (GitHub Copilot, MCP) dans le processus de développement.
               </p>
-              <ul class="work__list">
-                <li>ASP.NET core 6</li>
+              <ul class="tag-list">
+                <li>ASP.NET MVC 5</li>
+                <li>.NET 10</li>
                 <li>SQL Server</li>
-                <li>Teams</li>
+                <li>Redis</li>
+                <li>GitHub Copilot</li>
+                <li>Azure DevOps</li>
+              </ul>
+              <a href="https://www.neoswift.fr" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="exp-media exp-media--placeholder">
+              <span>NS</span>
+            </div>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Décembre 2024 — Juin 2025</span>
+              <h3>Business At Work</h3>
+              <p>
+                Au sein d'une équipe agile de 4 personnes, développement d'une application
+                de gestion de feuilles de temps internationale ainsi que d'un module de
+                qualification de tickets, avec authentification Keycloak.
+              </p>
+              <ul class="tag-list">
+                <li>Java</li>
+                <li>API REST</li>
+                <li>Keycloak</li>
+                <li>Angular</li>
+                <li>Azure</li>
+              </ul>
+              <a href="https://www.b-a-w.com" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="exp-media exp-media--placeholder">
+              <span>BAW</span>
+            </div>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Juillet 2022 — Octobre 2024</span>
+              <h3>ACENSI Mauritius</h3>
+              <p>
+                En mission pour un client à l'Île Maurice sur le projet IRISE, une application
+                de gestion de la mobilité internationale, en architecture Microservices / N-Tier.
+              </p>
+              <ul class="tag-list">
+                <li>ASP.NET Core 6/7/8</li>
+                <li>SQL Server</li>
+                <li>React.js</li>
+                <li>OAuth 2.0</li>
                 <li>Git / Azure DevOps</li>
               </ul>
-
-              <div class="work__links">
-                <a href="https://www.acensi.fr/page/accueil/fr_fr" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-              </div>
+              <a href="https://www.acensi.fr/page/accueil/fr_fr" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
             </div>
-            <div class="work__image-box">
-              <img src="./images/Asenci.png" class="work__image" alt="Asenci Mauritius" />
+            <div class="exp-media">
+              <img src="./images/Asenci.png" alt="Site d'Acensi Mauritius" loading="lazy" />
             </div>
-          </div>
+          </article>
 
-          <div class="work__box">
-            <div class="work__text">
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Février 2022 — Août 2022</span>
               <h3>ASTEK MADA</h3>
-              <div>Avril 2022 - Août 2022</div>
               <p>
-                J'étais en mission sur le projet ANRU en France pour le projet de migration de donnée,
-                et aussi sur le projet interne d'ASTEK.
+                J'étais en mission sur le projet ANRU en France pour la migration de données,
+                ainsi que sur le projet interne d'ASTEK.
               </p>
-              <ul class="work__list">
+              <ul class="tag-list">
                 <li>React</li>
-                <li>Asp.net mvc</li>
+                <li>ASP.NET MVC</li>
                 <li>C#</li>
-                <li>Sql Server</li>
-                <li>Git / GITLAB</li>
+                <li>SQL Server</li>
+                <li>Git / GitLab</li>
                 <li>TFS</li>
-                <li>Sql Server</li>
               </ul>
-
-              <div class="work__links">
-                <a href="https://www.astek.mg/"  target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-              </div>
+              <a href="https://www.astek.mg/" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
             </div>
-            <div class="work__image-box">
-              <img src="./images/astek.png" class="work__image" alt="Astek madagascar" />
+            <div class="exp-media">
+              <img src="./images/astek.png" alt="Astek Madagascar" loading="lazy" />
             </div>
-          </div>
+          </article>
 
-          <div class="work__box">
-            <div class="work__text">
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Août 2021 — Mars 2022</span>
               <h3>WAZO SA</h3>
               <p>
-                Je travaillais pour le projet triggers pour le compte d'un client
+                Développement de TriggersReport, une plateforme d'alertes pour la gestion
+                des risques sécuritaires avec géolocalisation, notifications push/SMS et
+                authentification par token JWT.
               </p>
-              <ul class="work__list">
+              <ul class="tag-list">
                 <li>React</li>
-                <li>Asp.net mvc</li>
+                <li>ASP.NET MVC</li>
                 <li>MongoDB</li>
+                <li>Auth0</li>
+                <li>JWT</li>
               </ul>
+              <a href="https://www.wazo.lu/fr/" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="exp-media">
+              <img src="./images/wazo.jfif" alt="Wazo SA" loading="lazy" />
+            </div>
+          </article>
 
-              <div class="work__links">
-                <a href="https://www.wazo.lu/fr/"  target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-              </div>
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Juin 2021 — Septembre 2021</span>
+              <h3>CtrlWeb</h3>
+              <p>
+                Développement de Telepresence Scenic, une plateforme de diffusion
+                d'événements mettant en relation plusieurs lieux connectés, en
+                Clean Architecture avec authentification JWT.
+              </p>
+              <ul class="tag-list">
+                <li>Node.js</li>
+                <li>TypeScript</li>
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <a href="https://www.ctrlweb.ca" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
             </div>
-            <div class="work__image-box">
-              <img src="./images/wazo.jfif" class="work__image" alt="Project 3" />
+            <div class="exp-media exp-media--placeholder">
+              <span>CW</span>
             </div>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Janvier 2021 — Août 2021</span>
+              <h3>Maki-Agency</h3>
+              <p>
+                Développement et consommation d'API REST en Clean Architecture, avec
+                webhooks pour la communication entre services externes et
+                authentification OAuth 2.0.
+              </p>
+              <ul class="tag-list">
+                <li>ASP.NET MVC 5</li>
+                <li>C#</li>
+                <li>MongoDB</li>
+                <li>React.js</li>
+                <li>Auth0</li>
+              </ul>
+              <a href="https://www.maki-agency.mg" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="exp-media exp-media--placeholder">
+              <span>MA</span>
+            </div>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Février 2020 — Octobre 2020</span>
+              <h3>TheWide France</h3>
+              <p>
+                Intégration des maquettes graphiques et amélioration de l'interface
+                d'une plateforme de freelancing.
+              </p>
+              <ul class="tag-list">
+                <li>Angular 9</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap</li>
+              </ul>
+              <a href="https://www.thewide.fr" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="exp-media exp-media--placeholder">
+              <span>TW</span>
+            </div>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Octobre 2019 — Octobre 2020</span>
+              <h3>Accès Banque Madagascar</h3>
+              <p>
+                Conception de base de données et développement de plusieurs applications
+                internes pour la banque (réclamations clients, gestion de missions,
+                cautionnement bancaire) en architecture N-Tier.
+              </p>
+              <ul class="tag-list">
+                <li>ASP.NET MVC 5</li>
+                <li>OpenID</li>
+                <li>MySQL</li>
+                <li>Angular 8/9</li>
+              </ul>
+              <a href="https://www.accesbanque.mg" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="exp-media exp-media--placeholder">
+              <span>AB</span>
+            </div>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-content">
+              <span class="exp-date">Mars 2018 — Novembre 2019</span>
+              <h3>Intelcia Madagascar</h3>
+              <p>
+                Conseiller client technique Niveau 1 et 2 pour les produits SFR
+                (Box, Décodeur, Téléphone) : diagnostic technique, résolution
+                d'incidents et fidélisation client. La dernière étape avant ma
+                reconversion vers le développement.
+              </p>
+              <ul class="tag-list">
+                <li>Support technique</li>
+                <li>Diagnostic réseau</li>
+                <li>Relation client</li>
+              </ul>
+              <a href="https://www.intelcia.mg" target="_blank" rel="noopener" class="link-arrow">
+                Visiter le site <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="exp-media exp-media--placeholder">
+              <span>IM</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Compétences ***** -->
+
+    <section class="section section-alt" id="competences">
+      <div class="row">
+        <p class="eyebrow reveal">Expertise</p>
+        <h2 class="reveal">Compétences</h2>
+
+        <div class="skills-grid">
+          <div class="skill reveal" style="--level: 95%">
+            <div class="skill-head"><span>HTML5</span><span>95%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 70%">
+            <div class="skill-head"><span>CSS / CSS3</span><span>70%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 85%">
+            <div class="skill-head"><span>React.js</span><span>85%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 45%">
+            <div class="skill-head"><span>Angular</span><span>45%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 50%">
+            <div class="skill-head"><span>GraphQL</span><span>50%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 75%">
+            <div class="skill-head"><span>ASP.NET Core 6</span><span>75%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 65%">
+            <div class="skill-head"><span>Node.js</span><span>65%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 60%">
+            <div class="skill-head"><span>Express.js</span><span>60%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 60%">
+            <div class="skill-head"><span>Next.js</span><span>60%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 60%">
+            <div class="skill-head"><span>Redis</span><span>60%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 65%">
+            <div class="skill-head"><span>Docker</span><span>65%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 55%">
+            <div class="skill-head"><span>Keycloak</span><span>55%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 55%">
+            <div class="skill-head"><span>TypeScript</span><span>55%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 70%">
+            <div class="skill-head"><span>MongoDB</span><span>70%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill reveal" style="--level: 80%">
+            <div class="skill-head"><span>SQL</span><span>80%</span></div>
+            <div class="skill-track"><div class="skill-fill"></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** A propos ***** -->
 
-    <section class="client" id="competences">
-      <div class="row">
-        <h2>Compétences</h2>
-        <div class="SkillBar">
-          <div id="Skill-HTML">
-            <span class="Skill-Area ">HTML5</span>
-            <span class="PercentText ">95%</span>
-          </div>
+    <section class="section" id="about">
+      <div class="row about-grid">
+        <div class="about-media reveal">
+          <img class="about-photo" src="./images/ChrisAcensi.jpg" alt="Photo de Léon Chris Stone" />
         </div>
 
-        <div class="SkillBar">
-          <div id="Skill-CSS">
-            <span class="Skill-Area ">CSS/CSS3</span>
-            <span class="PercentText ">70%</span>
-          </div>
-        </div>
+        <div class="about-content reveal">
+          <p class="eyebrow">Profil</p>
+          <h2>A propos de moi</h2>
+          <p>
+            Je m'appelle Léon Chris Stone, j'ai 32 ans et plus de 8 ans d'expérience en tant
+            que développeur full-stack avec les technologies React.js, Next.js, ASP.NET MVC5 / Core,
+            Angular, Node.js, Express.js, HTML5, CSS3, JS, TypeScript, C#, Java, MongoDB, MySQL,
+            PostgreSQL, SQL Server, SQLite3, Redis, Docker, Keycloak et GraphQL.
+          </p>
 
-   <!--<div class="SkillBar">
-          <div id="Skill-jQuery">
-            <span class="Skill-Area ">Next.js</span>
-            <span class="PercentText ">60%</span>
-          </div>
-        </div>-->     
-
-        <div class="SkillBar">
-          <div id="Skill-JS">
-            <span class="Skill-Area ">React.js</span>
-            <span class="PercentText ">85%</span>
-          </div>
-        </div>
-        <div class="SkillBar">
-          <div id="Skill-Angular">
-            <span class="Skill-Area ">Angular</span>
-            <span class="PercentText ">45%</span>
-          </div>
-        </div>
-        <div class="SkillBar">
-          <div id="Skill-GraphQL">
-            <span class="Skill-Area ">GraphQL</span>
-            <span class="PercentText ">50%</span>
-          </div>
-        </div>
-
-        <div class="SkillBar">
-          <div id="Skill-Asp">
-            <span class="Skill-Area ">Asp.net core 6 </span>
-            <span class="PercentText ">75%</span>
-          </div>
-        </div>
-
-        <div class="SkillBar">
-          <div id="Skill-Node">
-            <span class="Skill-Area ">Node.js</span>
-            <span class="PercentText ">65%</span>
-          </div>
-        </div>
-
-        <div class="SkillBar">
-          <div id="Skill-Typescript">
-            <span class="Skill-Area ">TypeScript </span>
-            <span class="PercentText ">55%</span>
-          </div>
-        </div>
-        <div class="SkillBar">
-          <div id="Skill-Mongo">
-            <span class="Skill-Area ">MongoDB</span>
-            <span class="PercentText ">70%</span>
-          </div>
-        </div>
-        <div class="SkillBar">
-          <div id="Skill-SQL">
-            <span class="Skill-Area ">SQL </span>
-            <span class="PercentText ">80%</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>A propos de moi</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-             Je m'appelle Léon Chris Stone, j'ai 28 ans, j'ai  plus de 3 ans  d'expériences  en tant 
-             que développeur full-stack avec les technologies React.js, Asp.net MVC5, Angular, Html5,
-             CSS3, js, Typescript, C#, Mongodb, Mysql, Postgresql, SqlServer, Sqlite3, GraphQL
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">En Résumé</a>
+          <div class="stats-row">
+            <div class="stat">
+              <strong>8+</strong>
+              <span>ans d'expérience</span>
+            </div>
+            <div class="stat">
+              <strong>15+</strong>
+              <span>technologies</span>
+            </div>
+            <div class="stat">
+              <strong>5</strong>
+              <span>pays d'intervention</span>
+            </div>
           </div>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/ChrisAcensi.jpg" alt="" />
-          </div>
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
         </div>
       </div>
     </section>
@@ -252,77 +453,65 @@
 
   <!-- ***** Contact ***** -->
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Conctactez-moi</h2>
-        <div class="md:flex md:-mx-4">
-          <div class="w-full px-4 md:mx-4 md:w-1/2"> <p>
-          Vous pouvez me contacter en m'envoyant un e-mail </br>
-          Je serai ravi de vous repondre dans le meilleur délais.
-          </p>
-          <!-- Replace the email with yours -->
-          <a href="mailto:chrisleon325@gmail.com" class="btn">M'envoyez un e-mail</a></div>
-          <div class="w-full px-4 md:mx-4 md:w-1/2"><div id="map"></div></div>
+  <section class="section section-alt" id="contact">
+    <div class="row contact-grid">
+      <div class="contact-content reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Contactez-moi</h2>
+        <p>
+          Vous pouvez me contacter en m'envoyant un e-mail.
+          Je serai ravi de vous répondre dans les meilleurs délais.
+        </p>
+        <a href="mailto:chrisleon325@gmail.com" class="btn btn-primary">M'envoyer un e-mail</a>
       </div>
-      
+
+      <div class="contact-media reveal">
+        <div id="map"></div>
+      </div>
+    </div>
   </section>
 
   <!-- ***** Footer ***** -->
 
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
-        <!-- <li class="footer__social-link-item">
-           <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>-->
         <li class="footer__social-link-item">
-          <a href="https://github.com/chris241" title="Link to Github Profile" target="_blank">
+          <a href="https://github.com/chris241" title="Lien vers le profil Github" target="_blank" rel="noopener">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/chris-stone-l%C3%A9on-a2775818a/" target="_blank">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
-              alt="Linkedin">
+          <a href="https://www.linkedin.com/in/chris-stone-l%C3%A9on-a2775818a/" target="_blank" rel="noopener"
+            title="Lien vers le profil Linkedin">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
-      <p>
-      </p>
-
+      <p class="footer__note">&copy; 2026 Léon Chris Stone. Tous droits réservés.</p>
+    </div>
   </footer>
 
-  <a href="#top" class="animate-bounce back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+  <a href="#top" class="back-to-top" title="Retour en haut" id="backToTop">
+    <img src="./images/arrow-up.svg" alt="Retour en haut" class="back-to-top__image" />
   </a>
+
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script>
+    var map = L.map('map', {
+      center: [-20.3, 57.583333],
+      zoom: 9
+    });
+    var marker = L.marker([-20.27446115149907, 57.47737759737147]).addTo(map)
+      .bindPopup("<div>J'habite ici !!!!</div>");
+    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  </script>
+
   <script src="./index.js"></script>
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin=""
-/>
-
-<script
-  src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-  crossorigin=""
-></script>
-<script>
-  var map = L.map('map',{
-  center: [-20.3,57.583333],
-  zoom: 9
-  });
-  var marker = L.marker([-20.27446115149907, 57.47737759737147]).addTo(map)
-  .bindPopup('<div>J\'habite ici !!!!</div><div>+261 34 37 876 30</div>Ou<div>+230 5910 4943</div>');
-  L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-
-</script>
 </body>
 
 </html>
