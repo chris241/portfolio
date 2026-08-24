@@ -738,6 +738,25 @@ body:not(.user-is-tabbing) a:focus {
     letter-spacing: .05em;
 }
 
+.exp-media--logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22rem;
+    padding: 3rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    background: var(--surface);
+}
+
+.exp-media--logo img {
+    max-width: 70%;
+    max-height: 60%;
+    width: auto;
+    object-fit: contain;
+}
+
 @media(max-width: 900px) {
     .exp-card {
         grid-template-columns: 1fr;
